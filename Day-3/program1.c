@@ -1,21 +1,23 @@
 #include <stdio.h>
-//print pprime numbers upto n
+//check the number is prime
 int main () {
-    int n,i,a,j;
+    int n,i,a;
     printf("enter n");
     scanf("%d",&n);
-    for(i=2; i<=n; i++){
-    a=1;
-    for(j=2; j<=n/2; j++){
-        if(i%j==0){
-        a=0;
+    a=0;
+    for(i=2; i<=n/2; i++){
+        if(n%i==0){
+        a=1;
         break;
         }
     }
     if(a==0){
-        printf("prime numbers are %d",i);
+        printf("prime");
     }
+    else{
+        printf("not prime");
     }
+    
     return 0;
     
 }
