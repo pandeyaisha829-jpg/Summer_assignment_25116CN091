@@ -1,19 +1,19 @@
 #include <stdio.h>
-//print pprime numbers upto n
+//print prime numbers upto n
 int main () {
     int n,i,a,j;
     printf("enter n");
     scanf("%d",&n);
     for(i=2; i<=n; i++){
     a=1;
-    for(j=2; j<=n/2; j++){
+    for(j=2; j<=i/2; j++){
         if(i%j==0){
         a=0;
         break;
         }
     }
-    if(a==0){
-        printf("prime numbers are %d",i);
+    if(a==1){
+        printf("%d\n",i);
     }
     }
     return 0;
