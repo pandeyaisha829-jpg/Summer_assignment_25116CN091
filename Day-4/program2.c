@@ -1,5 +1,5 @@
 #include <stdio.h>
-//program to generate fibonacci series
+//program to find nth fibonacci term
 int main () {
     int term1,term2,nextterm,n,i;
     term1=0,term2=1;
