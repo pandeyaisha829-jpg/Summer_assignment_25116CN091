@@ -1,27 +1,23 @@
 #include <stdio.h>
 //decimal to binary conversion
-void decimalTobinary(int n) {
-int binarynum[32];
-int i=0;
-if (n==0) {
-    printf("binary: 0\n");
-    return;
+int main () {
+int decimal,i;
+printf("enter a decimal number");
+scanf("%d",&decimal);
+printf("binary equivalent :");
+int flag=0;
+for(i=31; i>=0; i--){
+    int bit = (decimal>>i) & 1;
+    if(bit==1){
+        flag=1;
+    }
+    if(flag){
+        printf("%d",bit);
+    }
 }
-while(n>0){
-    binarynum[i]=n%2;
-    n=n/2;
-    i++;
-}
-printf("binary");
-for(int j=i-1; j>=0; j--){
-   printf("%d",binarynum[j]);
+if(flag==0){
+    printf("0");
 }
 printf("\n");
-}
-int main () {
-    int decimalnum;
-    printf("enter a decimal number");
-    scanf("%d",&decimalnum);
-    decimalTobinary(decimalnum);
     return 0;
 }
