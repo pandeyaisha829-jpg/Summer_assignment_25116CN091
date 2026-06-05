@@ -1,5 +1,5 @@
 #include <stdio.h>
-//print reverse star pattern
+//print hollow square pattern
 int main () {
     int row,i,j;
     printf("enter the number of rows");
