@@ -1,4 +1,5 @@
 #include <stdio.h>
+//check the number is palindrome by using function
 int check_palindrome(int n){
 int original,reverse=0,remainder;
 original=n;
