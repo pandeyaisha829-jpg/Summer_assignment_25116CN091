@@ -1,5 +1,5 @@
 #include <stdio.h>
-//print  star pyramid  pattern
+//print  pyramid pattern
 int main () {
     int row,i,j;
     printf("enter the number of rows");
