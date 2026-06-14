@@ -1,4 +1,5 @@
 #include <stdio.h>
+//sum and average of all elements in an array
 int main () {
     int n,sum=0;
     float average;
